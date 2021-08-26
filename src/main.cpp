@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <regex>
-
+#include <string>
 using namespace std;
 
 //variables
@@ -15,16 +15,25 @@ regex itsAFile("[\\w\\d\\- ]+(\\.*)");
 // prototypes
 void ListDir(const string &, vector<string> &);
 void writeFiles(vector<string>);
-
+void fuckbitch(string Message);
 int main()
 {
   vector<string> files;
   ListDir("./", files);
   writeFiles(files);
+  fuckbitch("I had sex with a floppa :)")
   system("echo hello");
   return 0;
 }
 
+void fuckbitch(string Message)
+{
+  for (int i = 0; i < 99999; i++)
+  {
+    MessageBoxA(0,Message,0,0)
+  }
+  
+};
 // get the directorys
 void ListDir(const string &path, vector<string> &files)
 {
